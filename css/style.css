@@ -1,0 +1,49 @@
+body { font-size: 14px; background: #fff; }
+
+#wallparer { overflow: hidden; width: 100%; }
+
+ul, li { margin: 0; padding: 0; }
+
+img { max-width: 100%; }
+
+.clear { clear: both; }
+
+header .menu { background: #333; }
+header .menu .main-menu ul { text-align: center; width: 100%; }
+header .menu .main-menu ul li { list-style: none; display: inline-block; }
+header .menu .main-menu ul li a { color: #fff; text-decoration: none; padding: 10px 50px; display: inline-block; text-transform: uppercase; transition: all .3s; }
+header .menu .main-menu ul li a:hover { background: #000; transition: all .3s; }
+header .menu .main-menu ul li.active a { background: #000; transition: all .3s; }
+header .menu .info-menu-mobile { display: none; }
+header .menu .info-menu-mobile .text { text-transform: uppercase; color: #fff; font-size: 15px; line-height: 40px; float: left; }
+header .menu .info-menu-mobile .icon { float: right; }
+header .menu .info-menu-mobile .icon span { width: 35px; height: 1px; background: #fff; line-height: 20px; display: block; margin-top: 9px; transition: all .3s; }
+
+main .item-owl { margin-top: 50px; margin-bottom: 20px; }
+main .item-owl .slider-home .item img { width: 100%; height: 180px; border: 1px solid #ededed; object-fit: contain; }
+main .item-owl .slider-home .item h4 { line-height: 15px; height: 40px; overflow: hidden; }
+main .item-owl .slider-home .item h4 a { font-size: 15px; color: #333; text-decoration: none; }
+main .item-owl .slider-home .owl-nav { position: absolute; width: 100%; height: 0; top: 30%; }
+main .item-owl .slider-home .owl-nav .owl-prev { float: left; height: 35px; width: 35px; background: #333; color: #fff; left: -50px; position: relative; }
+main .item-owl .slider-home .owl-nav .owl-next { float: right; height: 35px; width: 35px; background: #333; color: #fff; right: -50px; position: relative; }
+main .image-content img { border: 2px solid #333; margin-bottom: 20px; }
+main .tabs span { display: inline-block; margin-left: 30px; cursor: pointer; }
+main .tabs span.active { font-weight: 600; color: #e00; }
+
+@media (max-width: 1990px) { header .menu { background: #333; }
+  header .menu .main-menu ul li a { padding-left: 30px; padding-right: 30px; } }
+@media (max-width: 991px) { header .menu { background: #333; }
+  header .menu .main-menu ul li a { padding-left: 15px; padding-right: 15px; } }
+@media (max-width: 767px) { header .menu { background: #333; }
+  header .menu .main-menu { position: fixed; width: 70%; height: 100vh; overflow: auto; top: 0; left: -70%; background: #333; z-index: 2; transition: all 0.3s; }
+  header .menu .main-menu ul { width: 100%; text-align: left; }
+  header .menu .main-menu ul li { display: block; width: 100%; border-bottom: 1px solid #434343; }
+  header .menu .main-menu ul li a { display: block; padding-left: 15px; padding-right: 15px; }
+  header .menu .info-menu-mobile { display: block; }
+  header .menu.active .main-menu { left: 0; transition: all 0.3s; }
+  header .menu.active .mark-mobile { position: fixed; top: 0; right: 0; height: 100vh; width: 30%; z-index: 2; background: #0000; }
+  header .menu.active .icon span { opacity: 0; transition: all .3s; }
+  header .menu.active .icon span:first-child { transform: rotate(45deg); opacity: 1; position: relative; top: 10px; }
+  header .menu.active .icon span:last-child { transform: rotate(-45deg); opacity: 1; position: relative; top: -10px; } }
+
+/*# sourceMappingURL=style.css.map */
